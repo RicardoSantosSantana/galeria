@@ -11,7 +11,7 @@ export default function Categoria (req, res) {
 
   const filenames = fs.readdirSync(dir);
 
-  const images = filenames.map(name => path.join('fotos',dirRelativeToPublicFolder, name))
+  const images = filenames.map(name => path.join('/fotos',dirRelativeToPublicFolder, name))
 
   res.statusCode = 200
   res.json(images);

@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import { useState } from 'react';
  import AppContext from '../context/contextapi';
-
+ 
+ 
+ 
 export default function MyApp({ Component, pageProps }) {
  const [ListDirPhotos, setListDirPhotos] = useState("");
  const [Category, setCategory] = useState("");

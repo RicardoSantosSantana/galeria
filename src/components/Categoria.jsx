@@ -11,7 +11,7 @@ export default function Categoria() {
   const { data } = useSWR(`/api/category/fotos/${Photos.Category}`, fetcher) ; 
 
   function gerarImages(data){  
-    if(data) return data.map((imgPath,index) => <MyImages src={imgPath} key={"oioi"+index}/> )    
+    if(data) return data.map((imgPath,index) => <MyImages src={imgPath} key={"oioi"+index}/> )   
   }
 
   return gerarImages(data)

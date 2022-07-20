@@ -8,7 +8,7 @@ function Diretorios(){
   
     const url="/api/category/diretorios/"
       
-    useEffect( () => { getData() })
+    useEffect( () => { getData() },[Photos.Category])
    
         async function getData(){   
                  

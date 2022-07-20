@@ -1,10 +1,15 @@
-import Categoria from "../components/Categoria";
-import Diretorios from "../components/Diretorios"
-import React, {  useContext } from "react";
+import { useContext, useEffect } from "react";
 import AppContext from "../context/contextapi"
+
+
+import Diretorios from "../components/Diretorios"
+ 
+
+import Categoria from "../components/Categoria";
+import Box from "../components/Box";
  
 export default function Home() { 
-  const { Photos } = useContext(AppContext);
+  const {  Photos } = useContext(AppContext);
 
   return ( 
 
@@ -13,25 +18,23 @@ export default function Home() {
     <section className="py-5 text-center container">
       <div className="row py-lg-5">
         <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Album example</h1>
-          <p className="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-          <p>
-          <Diretorios/>
-          </p>
-        </div>
+          <h1 className="fw-light">Album de Exemplo</h1>
+          <p className="lead text-muted">Verifique se as imagens de seu site estão nas categorias corretas, caso não esteja informe via e-mail ou whatsapp qual categoria deveria estar e também informe se deseja incluir ou retirar alguma imagem.</p>
+          <p className="lead text-muted">Essa galeria é apenas para o desenvolvedor saber quais fotos representam qual serviço.</p>
+          <p className="alert alert-success">Essa galeria é apenas para o desenvolvedor saber quais fotos representam qual serviço.</p>
+          </div>
       </div>
+      <Diretorios/>
     </section>    
    
     <div className="album px-2 bg-light"> 
-         <h1><span className="badge bg-primary"> {Photos.Category}</span></h1>
+         <Box/> 
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
           <Categoria/> 
         </div>
       
-    </div>
-  
+    </div>  
   </main>
-
-  
   ) 
+ 
   }
