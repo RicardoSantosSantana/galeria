@@ -1,10 +1,6 @@
 import { useContext, useEffect } from "react";
-import AppContext from "../context/contextapi"
-
-
-import Diretorios from "../components/Diretorios"
- 
-
+import AppContext from "../context/contextapi" 
+import Diretorios from "../components/Diretorios" 
 import Categoria from "../components/Categoria";
 import Box from "../components/Box";
  
