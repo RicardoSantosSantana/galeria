@@ -23,7 +23,7 @@ export default function Home() {
     </section>    
    
     <div className="album px-2 bg-light"> 
-         <h1><span class="badge bg-primary"> {Photos.Category}</span></h1>
+         <h1><span className="badge bg-primary"> {Photos.Category}</span></h1>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
           <Categoria/> 
         </div>

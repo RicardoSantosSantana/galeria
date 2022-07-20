@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-export default (req, res) => {
+export default function Categoria (req, res) {
   
   const { category } = req.query
     
