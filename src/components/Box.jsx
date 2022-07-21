@@ -13,9 +13,7 @@ export default function Box() {
   const {  Photos } = useContext(AppContext);
   const fetcher = (url) => fetch(url).then((res) => res.json()); 
   const { data } = useSWR(`/api/category/fotos/${Photos.Category}`, fetcher) ; 
-  
- 
- 
+   
     if(data) {
         return (   
        <>

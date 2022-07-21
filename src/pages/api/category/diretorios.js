@@ -8,6 +8,7 @@ export default function Diretorios(req, res)  {
   const filenames = fs.readdirSync(dir)
   const data=[];
   async function aguarde(){
+ 
       await filenames.forEach(element => {
         
         const dirSubFolder = path.resolve('./public/','fotos',element);      

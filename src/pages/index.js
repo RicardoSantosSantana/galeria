@@ -14,7 +14,7 @@ export default function Home() {
     <section className="py-5 text-center container">
       <div className="row py-lg-5">
         <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Album de Exemplo</h1>
+          <h1 className="fw-light">Album de Exemplo 0.0.1</h1>
           <p className="lead text-muted">Verifique se as imagens de seu site estão nas categorias corretas, caso não esteja informe via e-mail ou whatsapp qual categoria deveria estar e também informe se deseja incluir ou retirar alguma imagem.</p>
           <p className="lead text-muted">Essa galeria é apenas para o desenvolvedor saber quais fotos representam qual serviço.</p>
           <p className="alert alert-success">Essa galeria é apenas para o desenvolvedor saber quais fotos representam qual serviço.</p>

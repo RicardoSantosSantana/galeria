@@ -3,7 +3,7 @@ import BotaoLink from "./BotaoLink";
 import AppContext from "../context/contextapi"; 
 
 function Diretorios(){
-  
+   
     const { Photos } = useContext(AppContext);
   
     const url="/api/category/diretorios/"
@@ -11,7 +11,7 @@ function Diretorios(){
     useEffect( () => { getData() },[Photos.Category])
    
         async function getData(){   
-                 
+    
            return await fetch(url)
              .then(res=>res.json())             
              .then(data=>Photos.setListDirPhotos(data))
